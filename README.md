@@ -11,6 +11,18 @@ Summary: An extension to pandas describe function.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pandas-summary-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pandas-summary-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pandas-summary-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pandas-summary-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pandas-summary-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pandas-summary-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pandas-summary/badges/version.svg)](https://anaconda.org/conda-forge/pandas-summary)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pandas-summary/badges/downloads.svg)](https://anaconda.org/conda-forge/pandas-summary)
+
 Installing pandas-summary
 =========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pandas-summary` available on your
 ```
 conda search pandas-summary --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pandas-summary-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pandas-summary-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pandas-summary-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pandas-summary-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pandas-summary-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pandas-summary-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pandas-summary/badges/version.svg)](https://anaconda.org/conda-forge/pandas-summary)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pandas-summary/badges/downloads.svg)](https://anaconda.org/conda-forge/pandas-summary)
 
 
 Updating pandas-summary-feedstock
