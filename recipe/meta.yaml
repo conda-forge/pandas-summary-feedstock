@@ -1,6 +1,6 @@
 {% set name = "pandas-summary" %}
-{% set version = "0.0.41" %}
-{% set sha256 = "4bf4563f9b5ca284ab308f43e1ede7bf4f66a47ebeb8585212ea48f525fcac0a" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "91db5092518a0a74fedd05e95a2110217aa9e9476ba99811219aa14e5cd2b102" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'An extension to pandas describe function.'
+  summary: An extension to pandas describe function.
   dev_url: https://github.com/mouradmourafiq/pandas-summary
 
 extra:
