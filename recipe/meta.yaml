@@ -1,15 +1,13 @@
 {% set name = "pandas-summary" %}
 {% set version = "0.2.0" %}
-{% set sha256 = "dadad65e2e56ac37ea2d16049966d9f36f745a568783b2ce7568595eef001ccf" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: dadad65e2e56ac37ea2d16049966d9f36f745a568783b2ce7568595eef001ccf
 
 build:
   noarch: python
@@ -19,25 +17,25 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
-
   run:
-    - python
+    - python >=3.6
     - numpy
     - pandas
+    - datatile
 
 test:
   imports:
     - pandas_summary
-
+  commands:
+    - pip check
   requires:
-    - pytest
+    - pip
 
 about:
   home: https://github.com/mouradmourafiq/pandas-summary
   license: MIT
-  license_family: MIT
   license_file: LICENSE
   summary: An extension to pandas describe function.
   dev_url: https://github.com/mouradmourafiq/pandas-summary
